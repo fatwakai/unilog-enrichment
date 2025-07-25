@@ -36,17 +36,5 @@ Sesuaikan konfigurasi di file config.yaml sesuai kebutuhan.
 Jalankan tool:
 python main.py
 
-unilog-enrichment/
-├── config.yaml            # File konfigurasi
-├── enrichment/            # Modul enrichment utama
-│   ├── __init__.py
-│   ├── enricher.py        # Log enrichment logic
-│   └── utils.py           # Utility functions
-├── logs/                  # Output hasil enrichment
-│   └── (output logs)
-├── main.py                # Entry point aplikasi
-├── requirements.txt       # Dependensi Python
-└── README.md              # Dokumentasi
-
 🤝 Kontribusi
 Kontribusi sangat terbuka! Silakan buat issue, pull request, atau diskusi fitur tambahan untuk pengembangan lebih lanjut.
