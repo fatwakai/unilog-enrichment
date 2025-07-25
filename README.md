@@ -30,23 +30,13 @@
    git clone https://github.com/fatwakai/unilog-enrichment.git
    cd unilog-enrichment
 Install dependensi:
-
-bash
-Salin
-Edit
 pip install -r requirements.txt
 Sesuaikan konfigurasi di file config.yaml sesuai kebutuhan.
 
 Jalankan tool:
-
-bash
-Salin
-Edit
 python main.py
+
 📁 Struktur Folder
-bash
-Salin
-Edit
 unilog-enrichment/
 ├── config.yaml              # File konfigurasi
 ├── enrichment/              # Modul enrichment utama
@@ -58,5 +48,6 @@ unilog-enrichment/
 ├── main.py                  # Entry point aplikasi
 ├── requirements.txt         # Dependensi Python
 └── README.md                # Dokumentasi
+
 🤝 Kontribusi
 Kontribusi sangat terbuka! Silakan buat issue, pull request, atau diskusi fitur tambahan untuk pengembangan lebih lanjut.
