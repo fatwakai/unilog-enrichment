@@ -1,0 +1,7 @@
+input_type: "file"  # file / syslog / elasticsearch
+input_file_path: "sample_logs/sample.json"
+output_type: "file"  # file / elasticsearch
+output_file_path: "result.json"
+elasticsearch_host: "http://localhost:9200"
+elasticsearch_index: "unilog"
+geoip_api_url: "https://ipinfo.io/"

@@ -1,0 +1,14 @@
+{
+  "login attempt": {
+    "attack_type": "Brute Force Attack",
+    "risk_level": "medium"
+  },
+  "port scan": {
+    "attack_type": "Reconnaissance",
+    "risk_level": "low"
+  },
+  "file accessed": {
+    "attack_type": "Data Exfiltration",
+    "risk_level": "high"
+  }
+}

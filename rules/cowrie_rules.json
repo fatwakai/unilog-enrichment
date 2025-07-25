@@ -1,0 +1,10 @@
+{
+  "cowrie.login.failed": {
+    "attack_type": "Brute Force Attack",
+    "risk_level": "medium"
+  },
+  "cowrie.command.input": {
+    "attack_type": "Command Injection",
+    "risk_level": "high"
+  }
+}
