@@ -1,24 +1,30 @@
 # 🛠️ UniLog Enrichment
 
-**UniLog Enrichment** adalah sebuah alat (tool) Python yang dirancang untuk memperkaya data log dengan informasi tambahan seperti lokasi IP (GeoIP), informasi ASN, dan WHOIS. Tool ini berfungsi sebagai middleware dalam sistem log management atau SIEM.
+**UniLog Enrichment** adalah alat (tool) berbasis Python yang dirancang untuk memperkaya data log dengan informasi tambahan seperti lokasi IP (GeoIP), ASN, dan WHOIS. Tool ini bekerja sebagai middleware dalam sistem log management atau SIEM untuk memberikan konteks tambahan terhadap data log mentah.
+
+---
 
 ## 🔍 Fitur Utama
 
-- 🔹 Enrichment data log berbasis JSON
-- 🌍 Informasi GeoIP (negara, kota, koordinat)
+- 📦 **Enrichment log JSON** secara otomatis
+- 🌍 Tambahan informasi GeoIP (negara, kota, koordinat)
 - 🛰️ Informasi ASN (Autonomous System Number)
-- 🕵️ WHOIS Lookup (jika diperlukan)
-- 🏷️ Tagging berdasarkan kriteria tertentu
-- ⚙️ Konfigurasi fleksibel via `config.yaml`
+- 🕵️ WHOIS Lookup (opsional)
+- 🏷️ Tagging berbasis kriteria tertentu
+- ⚙️ Konfigurasi fleksibel melalui `config.yaml`
+
+---
 
 ## 🧾 Prasyarat
 
-- Python 3.10 atau lebih tinggi
-- Koneksi internet (untuk lookup data publik)
+- Python **3.10** atau lebih tinggi
+- Koneksi internet (untuk data publik seperti GeoIP, ASN, dan WHOIS)
+
+---
 
 ## 🚀 Cara Menggunakan
 
-1. Clone repositori:
+1. **Clone repositori:**
 
    ```bash
    git clone https://github.com/fatwakai/unilog-enrichment.git
@@ -29,7 +35,7 @@ bash
 Salin
 Edit
 pip install -r requirements.txt
-Edit file config.yaml sesuai kebutuhan.
+Sesuaikan konfigurasi di file config.yaml sesuai kebutuhan.
 
 Jalankan tool:
 
@@ -38,18 +44,19 @@ Salin
 Edit
 python main.py
 📁 Struktur Folder
-lua
+bash
 Salin
 Edit
 unilog-enrichment/
-├── config.yaml
-├── enrichment/
+├── config.yaml              # File konfigurasi
+├── enrichment/              # Modul enrichment utama
 │   ├── __init__.py
-│   ├── enricher.py
-│   └── utils.py
-├── logs/
-│   └── (output log files)
-├── main.py
-└── requirements.txt
+│   ├── enricher.py          # Log enrichment logic
+│   └── utils.py             # Utility functions
+├── logs/                    # Output hasil enrichment
+│   └── (output logs)
+├── main.py                  # Entry point aplikasi
+├── requirements.txt         # Dependensi Python
+└── README.md                # Dokumentasi
 🤝 Kontribusi
-Pull request dan diskusi terbuka untuk pengembangan fitur tambahan.
+Kontribusi sangat terbuka! Silakan buat issue, pull request, atau diskusi fitur tambahan untuk pengembangan lebih lanjut.
